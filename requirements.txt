@@ -1,0 +1,6 @@
+PyQt6==6.6.0
+numpy==1.26.0
+pandas==2.1.4
+polars==0.20.1
+pyyaml==6.0.1
+matplotlib==3.8.2
