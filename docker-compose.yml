@@ -1,0 +1,17 @@
+version: '3.8'
+
+
+services:
+  climate-app:
+    build: .
+    container_name: tcc-climate-control
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+      - ./tmp/.X11-unix:/tmp/.X11-inix
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_11_NO_MITSHM=1
+    network_mode: host
+    stdin_open: true
+    tty: true
